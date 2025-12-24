@@ -1,154 +1,302 @@
+/* ================= GLOBAL RESET ================= */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: rgb(9, 9, 53);
     color: white;
-    font-family: "Poppins", serif;
-    margin: 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
     background-color: rgb(14, 14, 60);
     padding: 0 2rem;
 }
 
+.headline {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 nav ul {
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    list-style: none;
 }
 
 nav ul li {
-    text-decoration: none;
     margin: 0 1rem;
-    list-style: none;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 nav ul li a:hover {
-    transition: .2s ease;
     color: wheat;
+    transition: 0.2s ease;
 }
 
-.headline {
-    font-size: 1.56rem;
-}
-
-.right {
-    font-size: 1.2rem;
-}
-
+/* ================= HERO SECTION ================= */
 .midsec {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 5vh 5%;
+    align-items: center;
+    padding: 16vh 8%;
+    flex-wrap: wrap;
 }
 
 .rightmed {
     flex: 1;
-    margin: 10.5vh;
     font-size: 1.8rem;
-    word-wrap: break-word;
-    justify-content: space-around;
+}
+
+.rightmed h1 {
+    margin-bottom: 1rem;
 }
 
 .leftmed {
     flex: 1;
-    margin: 5vh;
-    justify-content: center;
     display: flex;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-img:hover {
-    transform: scale(1.01);
-    opacity: 0.85;
+    justify-content: center;
 }
 
 .leftmed img {
-    border: 3px solid rgb(6, 69, 64);
+    width: 85%;
     border-radius: 20px;
+    border: 3px solid rgb(6, 69, 64);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
 }
 
-.colour {
+.leftmed img:hover {
+    transform: scale(1.03);
+}
+
+.colour,
+#element {
     color: rgb(18, 86, 212);
 }
 
-#element{
+/* ================= COMMON SECTION STYLE ================= */
+.section {
+    padding: 6vh 10%;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: wheat;
+}
+
+.section p {
+    max-width: 800px;
+    font-size: 1.1rem;
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Text */
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    margin-bottom: 1rem;
+    max-width: 600px; /* balanced width */
+}
+
+.highlight {
+    color: rgb(18, 86, 212);
+    font-weight: 500;
+}
+
+/* Stats */
+.about-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-stats div {
+    background: rgb(14, 14, 60);
+    padding: 1.2rem 1.6rem;
+    border-radius: 14px;
+    text-align: center;
+    min-width: 150px;
+    transition: transform 0.1s ease;
+}
+
+.about-stats div:hover {
+    transform: translateY(-6px);
+}
+
+.about-stats h3 {
+    font-size: 1.6rem;
+    color: wheat;
+}
+
+.about-stats span {
+    font-size: 0.9rem;
+    color: #bdbdbd;
+}
+
+/* Image */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 22px;
+    border: 3px solid rgb(6, 69, 64);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+    transition: transform 0.2s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= SKILLS SECTION (UPGRADED) ================= */
+
+.skills-section {
+    text-align: center;
+}
+
+.skills-subtitle {
+    font-size: 4rem;
+    margin-bottom: 2.2rem;
+    color: #cfcfcf;
+    text-align: left;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.8rem;
+}
+
+.skill-card {
+    background: rgb(14, 14, 60);
+    padding: 1.8rem;
+    border-radius: 16px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    color: wheat;
+}
+
+/* Progress bar */
+.progress {
+    background: #1f1f5e;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgb(18, 86, 212),
+        rgb(6, 160, 160)
+    );
+    border-radius: 10px;
+    transition: width 0.6s ease;
+}
+
+/* ================= PROJECTS ================= */
+.project-card {
+    background-color: rgb(14, 14, 60);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
     color: rgb(18, 86, 212);
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .headline {
-        font-size: 2.5rem;
-    }
-
-    .rightmed {
-        font-size: 1.5rem;
-    }
-
-    nav ul li {
-        margin: 0 0.5rem;
-    }
+/* ================= SERVICES ================= */
+.section ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
 }
 
+.section ul li {
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+}
+
+/* ================= CONTACT ================= */
+#contact p {
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: rgb(14, 14, 60);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: wheat;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
 @media (max-width: 992px) {
-    nav {
+    .midsec {
         flex-direction: column;
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: row;
-    }
-
-    .midsec {
-        flex-direction: column;
-    }
-
     .rightmed {
-        margin: 2rem 0;
-    }
-
-    .leftmed img {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .headline {
-        font-size: 1.8rem;
-    }
-
-    nav ul li {
-        font-size: 1rem;
-    }
-
-    .rightmed {
-        font-size: 1.3rem;
+        margin-bottom: 2rem;
     }
 
     .leftmed img {
@@ -156,44 +304,47 @@ img:hover {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .headline {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
+        font-size: 1.4rem;
     }
 
-    .right a{
+    nav ul li a {
         font-size: 1rem;
     }
 
-    nav{
-        height: 30%;
-    }
-
-    .rightmed {
-        font-size: 1.2rem;
-    }
-
-    nav ul li {
-        font-size: 0.9rem;
-    }
-
-    .leftmed img {
-        width: 100%;
+    .section h2 {
+        font-size: 1.8rem;
     }
 }
 
-@media (max-width: 340px) {
-    .headline {
-        font-size: 1rem;
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .rightmed {
-        font-size: 1rem;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 340px) {
+    .headline {
+        font-size: 1.2rem;
     }
 
-    nav ul li a{
-        font-size: .8rem;
+    .rightmed {
+        font-size: 1.1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
     }
 
     .leftmed img {

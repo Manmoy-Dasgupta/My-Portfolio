@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="sstyle.css">
+
+    <title>Manmoy | Portfolio</title>
+</head>
+
+<body>
+
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <header class="firstsection">
+        <nav>
+            <p class="headline">Manmoy Portfolio</p>
+            <ul class="right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="login.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <main id="home" class="midsec">
+        <div class="rightmed">
+            <h1>I am <span class="colour">Manmoy Dasgupta</span></h1>
+            <p>
+                A passionate Web Developer who loves building
+                real-world projects and learning new technologies.
+            </p>
+            <span id="element"></span>
+        </div>
+
+        <div class="leftmed">
+            <img src="img.jpg" alt="Developer Image">
+        </div>
+    </main>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section id="about" class="section about-section">
+    <div class="about-container">
+
+        <!-- Text Content -->
+        <div class="about-text">
+            <h2>About Me</h2>
+
+            <p class="about-word">
+                Hi, I’m <span class="highlight">Manmoy Dasgupta</span>, a passionate
+                web developer who focuses on building clean, responsive, and
+                user-friendly web experiences.
+            </p>
+
+            <p class="about-word">
+                I enjoy solving problems, learning new technologies, and turning
+                ideas into real-world projects that create value.
+            </p>
+
+            <div class="about-stats">
+                <div>
+                    <h3>4+</h3>
+                    <span>Projects</span>
+                </div>
+                <div>
+                    <h3>1+</h3>
+                    <span>Years Learning</span>
+                </div>
+                <div>
+                    <h3>100%</h3>
+                    <span>Dedication</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image -->
+        <section class="about-image">
+        <div>
+            <img src="Manmoy.png" alt="About Manmoy">
+        </div>
+        </section>
+
+    </div>
+</section>
+
+<!-- ================= SKILLS SECTION ================= -->
+<section id="skills" class="section skills-section">
+    <h2>My Skills</h2>
+    <p class="skills-subtitle">
+        Technologies and tools I work with regularly
+    </p>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>HTML5</h3>
+            <div class="progress">
+                <span style="width: 90%"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <div class="progress">
+                <span style="width: 90%"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <div class="progress">
+                <span style="width: 50%"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Responsive Design</h3>
+            <div class="progress">
+                <span style="width: 80%"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Git & GitHub</h3>
+            <div class="progress">
+                <span style="width: 50%"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Backend Basics</h3>
+            <div class="progress">
+                <span style="width: 40%"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website showcasing my skills and projects.</p>
+            <a href="" class="project-link">Portfolio</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Login Page</h3>
+            <p>Simple login system using HTML, CSS, and JavaScript.</p>
+            <a href="" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Upcoming Project</h3>
+            <p>More projects coming soon...</p>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES SECTION ================= -->
+    <section class="section">
+        <h2>Services</h2>
+        <ul>
+            <li>Website Design</li>
+            <li>Frontend Development</li>
+            <li>Portfolio Websites</li>
+            <li>Landing Pages</li>
+        </ul>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:manmoydasgupta12@gmail.com">manmoydasgupta12@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/manmoy">github.com/manmoy</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/manmoy">linkedin.com/in/manmoy</a></p>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <p>© 2025 Manmoy Dasgupta | All Rights Reserved</p>
+    </footer>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Frontend Enthusiast', 'Problem Solver'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
