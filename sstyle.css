@@ -78,7 +78,7 @@ nav ul li a:hover {
 }
 
 .leftmed img {
-    width: 50%;
+    width: 40%;
     border-radius: 20px;
     border: 3px solid rgb(6, 69, 64);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -139,7 +139,7 @@ nav ul li a:hover {
     display: flex;
     gap: 1.5rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .about-stats div {
@@ -173,7 +173,8 @@ nav ul li a:hover {
 }
 
 .about-image img {
-    width: 100%;
+    width: 70%;
+    max-width: 360px;
     border-radius: 22px;
     border: 3px solid rgb(6, 69, 64);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
@@ -299,7 +300,7 @@ nav ul li a:hover {
     }
 
     .leftmed img {
-        width: 50%;
+        width: 90%;
     }
 }
 
@@ -315,6 +316,47 @@ nav ul li a:hover {
     .section h2 {
         font-size: 1.8rem;
     }
+
+    .about-image{
+        width: 100%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        align-items: center;
+    }
+
+    .about-text p {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    .about-stats {
+        gap: 1rem;
+    }
+
+    .about-stats div {
+        min-width: unset;
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .about-stats h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-stats span {
+        font-size: 0.8rem;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -347,6 +389,6 @@ nav ul li a:hover {
     }
 
     .leftmed img {
-        width: 50%;
+        width: 100%;
     }
 }
