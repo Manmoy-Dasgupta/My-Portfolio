@@ -86,6 +86,19 @@ body {
   position: relative;
 }
 
+.input-group textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  resize: none; /* 🔒 FIXED */
+}
+
+
 .input-group input,
 .input-group textarea {
   width: 100%;
