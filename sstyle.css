@@ -290,6 +290,66 @@ nav ul li a:hover {
     color: wheat;
 }
 
+/* ================= SOCIAL ICON BUTTONS ================= */
+
+.contact-section {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    margin-top: 2rem;
+
+    /* IMPORTANT: always side by side */
+    flex-wrap: nowrap;
+}
+
+.icon-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    background: rgb(14, 14, 60);
+    color: white;
+    font-size: 1.4rem;
+
+    border: 2px solid transparent;
+    transition: all 0.25s ease;
+}
+
+/* Hover animation */
+.icon-btn:hover {
+    transform: translateY(-6px) scale(1.05);
+}
+
+/* Individual brand colors */
+.icon-btn.email:hover {
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+.icon-btn.github:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.icon-btn.linkedin:hover {
+    color: #0a66c2;
+    border-color: #0a66c2;
+}
+
+.icon-btn.google:hover {
+    color: #ea4335;
+    border-color: #ea4335;
+}
+
 /* ================= RESPONSIVE DESIGN ================= */
 @media (max-width: 992px) {
     .midsec {
@@ -369,6 +429,12 @@ nav ul li a:hover {
 
     .headline{
         margin-bottom: 3.2%;
+    }
+
+    .icon-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
     }
 
 }
