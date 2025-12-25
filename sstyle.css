@@ -274,6 +274,45 @@ nav ul li a:hover {
     font-size: 1.1rem;
 }
 
+.services-section {
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.service-card {
+    background: rgb(14, 14, 60);
+    padding: 2rem 1.6rem;
+    border-radius: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.service-card img {
+    width: 70px;
+    margin-bottom: 1.2rem;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    color: wheat;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #d0d0d0;
+}
+
 /* ================= CONTACT ================= */
 #contact p {
     margin-top: 0.6rem;
