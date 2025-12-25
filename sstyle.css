@@ -302,7 +302,6 @@ nav ul li a:hover {
     align-items: center;
     gap: 1.4rem;
     margin-top: 2rem;
-
     /* IMPORTANT: always side by side */
     flex-wrap: nowrap;
 }
