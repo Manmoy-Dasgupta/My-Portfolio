@@ -367,6 +367,10 @@ nav ul li a:hover {
         font-size: 0.95rem; /* slightly smaller text */
     }
 
+    .headline{
+        margin-bottom: 3.2%;
+    }
+
 }
 
 @media (max-width: 480px) {
