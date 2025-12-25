@@ -36,6 +36,8 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    flex-wrap: nowrap;   /* 👈 IMPORTANT */
+    white-space: nowrap; /* prevents text breaking */
 }
 
 nav ul li {
@@ -355,6 +357,14 @@ nav ul li a:hover {
 
     .about-stats span {
         font-size: 0.8rem;
+    }
+
+    nav ul li {
+        margin: 0 0.6rem;  /* reduce gap */
+    }
+
+    nav ul li a {
+        font-size: 0.95rem; /* slightly smaller text */
     }
 
 }
