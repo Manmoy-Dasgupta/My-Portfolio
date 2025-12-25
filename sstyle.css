@@ -174,7 +174,6 @@ nav ul li a:hover {
 
 .about-image img {
     width: 100%;
-    max-width: 360px;
     border-radius: 22px;
     border: 3px solid rgb(6, 69, 64);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
