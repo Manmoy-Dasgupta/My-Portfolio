@@ -388,46 +388,75 @@ nav ul li a:hover {
     border-color: #ea4335;
 }
 
-/* ================= 3-D Designing ================= */
-.banner{
+/* ================= 3D ROTATING SECTION (FIXED) ================= */
+
+.banner {
     width: 100%;
-    height: 100vh;
+    min-height: 90vh;              /* enough vertical space */
+    padding: 8vh 0 12vh;           /* GAP BELOW so About won't overlap */
+    background: linear-gradient(
+        180deg,
+        rgb(9, 9, 53),
+        rgb(14, 14, 60)
+    );
     text-align: center;
-    overflow: hidden;
     position: relative;
+    overflow: visible;             /* IMPORTANT: prevents image cutting */
 }
 
-.banner .slider{
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    top: 10%;
-    left: calc(50% - 100px);
+.banner-title {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+    color: wheat;
+}
+
+.banner .slider {
+    position: relative;
+    width: 260px;                  /* increased width */
+    height: 320px;                 /* increased height */
+    margin: auto;
+
     transform-style: preserve-3d;
-    transform: perspective(1000px);
-    animation: autoRun 20s linear infinite;
+    transform: perspective(1400px) rotateX(-15deg);
+    animation: autoRun 18s linear infinite;
 }
 
-@keyframes autoRun{
-    from{
-        transform: perspective(1000px) rotateX('-16deg') rotateY(0deg);
-    }to{
-        transform: perspective(1000px) rotateX('-16deg') rotateY('360deg');
+@keyframes autoRun {
+    from {
+        transform: perspective(1400px) rotateX(-15deg) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1400px) rotateX(-15deg) rotateY(360deg);
     }
 }
 
-.banner .slider .item{
+.banner .slider .item {
     position: absolute;
-    inset: 0 0 0 0;
-    transform: 
-    rotate(calc((var(--position) - 1)* (360/var(--quantity))* 1deg))
-    translateZ(550px);
+    inset: 0;
+    transform:
+        rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(480px);         /* balanced depth */
 }
 
-.banner .slider .item img{
+.banner .slider .item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;             /* no stretching */
+    border-radius: 18px;
+
+    border: 3px solid rgb(6, 69, 64);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+
+    background: rgb(14, 14, 60);   /* prevents transparent cut look */
+    transition: transform 0.3s ease;
+}
+
+.banner .slider .item img:hover {
+    transform: scale(1.06);
+}
+
+.about-section {
+    margin-top: 6vh;
 }
 
 /* ================= RESPONSIVE DESIGN ================= */
