@@ -548,6 +548,23 @@ nav ul li a:hover {
 
 }
 
+@media (max-width: 768px) {
+    .banner {
+        min-height: 110vh;
+    }
+
+    .banner .slider {
+        width: 220px;
+        height: 280px;
+    }
+
+    .banner .slider .item {
+        transform:
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(360px);
+    }
+}
+
 @media (max-width: 480px) {
     nav {
         flex-direction: column;
