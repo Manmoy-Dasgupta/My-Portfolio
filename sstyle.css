@@ -582,6 +582,23 @@ nav ul li a:hover {
     }
 }
 
+@media (max-width: 480px) {
+    .banner {
+        min-height: 50vh;
+    }
+
+    .banner .slider {
+        width: 110px;
+        height: 200px;
+    }
+
+    .banner .slider .item {
+        transform:
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(360px);
+    }
+}
+
 @media (max-width: 340px) {
     .headline {
         font-size: 1.2rem;
