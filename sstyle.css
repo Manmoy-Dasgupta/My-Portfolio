@@ -1,3 +1,45 @@
+/* ================= CUSTOM FONTS ================= */
+@font-face {
+    font-family: 'Primary';
+    src: url('fonts/Primary-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Primary';
+    src: url('fonts/Primary-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Primary';
+    src: url('fonts/Primary-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Display / Heading font */
+@font-face {
+    font-family: 'Display';
+    src: url('fonts/Display-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Display';
+    src: url('fonts/Display-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ================= GLOBAL RESET ================= */
 * {
     margin: 0;
@@ -8,8 +50,20 @@
 body {
     background-color: rgb(9, 9, 53);
     color: white;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Primary', system-ui, sans-serif;
     line-height: 1.6;
+}
+
+p, span, li, a {
+    font-family: 'Primary', system-ui, sans-serif;
+    font-weight: 400;
+}
+
+nav ul li a,
+.icon-btn,
+.project-link {
+    font-family: 'Primary', system-ui, sans-serif;
+    font-weight: 500;
 }
 
 /* ================= NAVBAR ================= */
@@ -17,6 +71,14 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+h1, h2, h3, h4,
+.headline,
+.banner-title {
+    font-family: 'Display', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 nav {
