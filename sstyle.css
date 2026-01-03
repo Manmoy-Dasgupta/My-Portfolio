@@ -550,12 +550,12 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .banner {
-        min-height: 110vh;
+        min-height: 80vh;
     }
 
     .banner .slider {
-        width: 220px;
-        height: 280px;
+        width: 200px;
+        height: 250px;
     }
 
     .banner .slider .item {
